@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.path-display {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.path-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#json-path {
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #0066cc;
+    word-break: break-all;
+}
+
+.editor-container {
+    position: relative;
+    flex-grow: 1;
+    margin-bottom: 16px;
+}
+
+#json-editor {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+}
+
+#error-display {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+.info {
+    font-size: 14px;
+    color: #666;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0052a3;
+}

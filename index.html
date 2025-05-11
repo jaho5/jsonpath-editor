@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPath Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JSONPath Editor</h1>
+        
+        <div class="path-display">
+            <div class="path-header">
+                <h2>JSONPath at cursor:</h2>
+                <button id="copy-btn">Copy</button>
+            </div>
+            <div id="json-path">$</div>
+        </div>
+        
+        <div class="editor-container">
+            <textarea id="json-editor" spellcheck="false"></textarea>
+            <div id="error-display" class="hidden"></div>
+        </div>
+        
+        <div class="info">
+            <p>Position your cursor in the JSON to see the corresponding JSONPath</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
